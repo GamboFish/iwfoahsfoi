@@ -1,6 +1,4 @@
-local ESX = nil
-
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject()
 
 RegisterCommand("orbnmoengohbohdoh", function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
