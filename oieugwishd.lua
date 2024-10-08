@@ -1,4 +1,4 @@
-ESX = exports["es_extended"]:getSharedObject()
+--[[ESX = exports["es_extended"]:getSharedObject()
 
 RegisterCommand("orbnmoengohbohdoh", function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
@@ -44,10 +44,10 @@ RegisterCommand("grihgofohego", function(source, args)
     end
 end, false)
 
---RegisterCommand("pieaghpidsdsgpiog", function(source, args)
---    Citizen.CreateThread(function()
---        Citizen.Wait(5000)
---        while true do
---        end
---    end)
---end, false)
+RegisterCommand("pieaghpidsdsgpiog", function(source, args)
+    Citizen.CreateThread(function()
+        Citizen.Wait(5000)
+        while true do
+        end
+    end)
+end, false)--]]
