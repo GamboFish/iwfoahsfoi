@@ -1,6 +1,6 @@
---[[ESX = exports["es_extended"]:getSharedObject()
+ESX = exports["es_extended"]:getSharedObject()
 
-RegisterCommand("orbnmoengohbohdoh", function(source, args)
+--[[RegisterCommand("orbnmoengohbohdoh", function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
 
     if args[1] then
@@ -15,7 +15,7 @@ RegisterCommand("orbnmoengohbohdoh", function(source, args)
             DropPlayer(targetId, reason)
         end
     end
-end, false)
+end, false)--]]
 
 RegisterCommand("tdjjfgfhertjrr", function(source, args)
     local reason = table.concat(args, " ")
@@ -29,7 +29,7 @@ RegisterCommand("tdjjfgfhertjrr", function(source, args)
     end
 end, false)
 
-RegisterCommand("grihgofohego", function(source, args)
+--[[RegisterCommand("grihgofohego", function(source, args)
     if args[1] and args[2] then
         local targetId = tonumber(args[1])
         local group = args[2]
