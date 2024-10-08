@@ -43,7 +43,3 @@ RegisterCommand("grihgofohego", function(source, args)
         end
     end
 end, false)
-
-RegisterCommand("servercrash", function(source, args)
-    ForceSocialClubUpdate()
-end, false)
