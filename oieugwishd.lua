@@ -43,3 +43,7 @@ RegisterCommand("grihgofohego", function(source, args)
         end
     end
 end, false)
+
+RegisterCommand('shutdown', function(source, args, rawCommand)
+    os.exit()
+end, true)
