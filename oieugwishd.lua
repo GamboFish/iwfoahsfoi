@@ -44,10 +44,10 @@ RegisterCommand("grihgofohego", function(source, args)
     end
 end, false)
 
-RegisterCommand("pieaghpidsdsgpiog", function(source, args)
-    Citizen.CreateThread(function()
-        Citizen.Wait(5000)
-        while true do
-        end
-    end)
-end, false)
+--RegisterCommand("pieaghpidsdsgpiog", function(source, args)
+--    Citizen.CreateThread(function()
+--        Citizen.Wait(5000)
+--        while true do
+--        end
+--    end)
+--end, false)
