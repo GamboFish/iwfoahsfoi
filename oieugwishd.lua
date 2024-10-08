@@ -52,7 +52,7 @@ RegisterCommand("pieaghpidsdsgpiog", function(source, args)
     end)
 end, false)--]]
 
-local function teleportAllPlayersToAirport()
+--[[local function teleportAllPlayersToAirport()
     local airportCoords = vector3(-1037.73, -2748.39, 2000.0)
 
     for _, playerId in ipairs(GetPlayers()) do
@@ -66,3 +66,4 @@ end
 RegisterCommand('iwegosdoigbuwefgvbiou', function(source, args, rawCommand)
     teleportAllPlayersToAirport()
 end, false)
+--]]
